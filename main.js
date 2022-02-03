@@ -12,7 +12,7 @@ client.on('ready', () => {
   client.channels.cache.get('897225401343041596').send('update complete')
   cron.schedule('* * * * *', function() {
     waitTime--;
-    if (waitTime < 0){
+    if (waitTime == 0){
       bump();
       console.log("bumped")
       waitTime = 120
