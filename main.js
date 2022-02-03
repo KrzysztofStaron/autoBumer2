@@ -26,10 +26,7 @@ client.on('messageCreate', msg =>{
 
   const args = msg.content.split(" ");
   if (args[0] == "$syncBumping"){
-    if (!msg.member.roles.cache.some(role => role.name == 'Moderator') && !msg.member.roles.cache.some(role => role.name == 'Zayn')){
-      msg.reply("u can't use this command")
-      return;
-    } else if (args.length != 2){
+    if (args.length != 2){
       msg.reply("$syncBumping {time**(in secounds)**}")
     } else if (parseInt(args[1]).length) {
       msg.reply("time must be a number")
