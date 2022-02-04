@@ -30,7 +30,7 @@ client.on('messageCreate', msg =>{
       msg.reply("u can't use this command")
       return;
     } else if (args.length != 2){
-      msg.reply("$syncBumping {time**(in secounds)**}")
+      msg.reply("$syncBumping {time**(in minutes)**}")
     } else if (parseInt(args[1]).length) {
       msg.reply("time must be a number")
     } else {
