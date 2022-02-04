@@ -68,6 +68,11 @@ function bump(){
   };
 
   var req = https.request(options, (res) => {console.log("bumped")});
+  req.on('error', (e) => {
+    console.error(e);
+    bump();
+    return;
+  });
 
   req.write(postData);
   req.end();
