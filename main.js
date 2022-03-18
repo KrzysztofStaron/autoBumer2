@@ -48,7 +48,7 @@ client.on('messageCreate', msg =>{
   }
 });
 
-client.login('OTM4MzMwMTU2MTk4NjkwODQ3.YfouDg.O80e2KZ6ezmgjuCgA7FybP62PAY');
+client.login('token');
 
 function bump(){
     var postData = JSON.stringify({
@@ -63,7 +63,7 @@ function bump(){
     headers: {
          'Content-Type': 'application/json',
          'Content-Length': postData.length,
-         "authorization": 'OTM3MzEyMzUwOTU0OTkxNjE2.YfZ6_g.kqg_VNXzuz_LKq_jyi3wLkRXkv4' //OTM3MzEyMzUwOTU0OTkxNjE2.YfZ6_g.kqg_VNXzuz_LKq_jyi3wLkRXkv4
+         "authorization": 'use_token'
        }
   };
 
