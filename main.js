@@ -9,7 +9,7 @@ let waitTime = 120;
 
 client.on('ready', () => {
   console.log(`Bot starto`);
-  client.channels.cache.get('897225401343041596').send('update complete')
+  client.channels.cache.get('channel_id').send('update complete')
   cron.schedule('* * * * *', function() {
     waitTime--;
     if (waitTime < 0){
@@ -58,7 +58,7 @@ function bump(){
   var options = {
     hostname: 'discord.com',
     port: 443,
-    path: '/api/v9/channels/897225401343041596/messages',
+    path: '/api/v9/channels/channel_id/messages',
     method: 'POST',
     headers: {
          'Content-Type': 'application/json',
