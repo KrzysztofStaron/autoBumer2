@@ -63,7 +63,7 @@ function bump(){
     headers: {
          'Content-Type': 'application/json',
          'Content-Length': postData.length,
-         "authorization": 'use_token'
+         "authorization": 'user_token'
        }
   };
 
